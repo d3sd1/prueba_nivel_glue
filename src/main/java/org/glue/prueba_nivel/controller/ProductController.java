@@ -26,7 +26,7 @@ public class ProductController {
     public List<ProductResponseDTO> getSortedProducts(@RequestBody SortRequestDTO requestDTO) {
         return service.sortProducts(requestDTO.getSalesWeight(), requestDTO.getStockRatioWeight())
                 .stream()
-                .map(mapper::toDTO)
+                .map(mapper::toProductResponseDto)
                 .collect(Collectors.toList());
     }
 }
