@@ -49,7 +49,7 @@ class ProductControllerE2ETest {
                 .then()
                 .statusCode(400)
                 .extract().asString();
-
+// comentario solo para decir que soy andrei y no se porque en los commit messages sale otro nick, tengo que ajustarlo en este pc
         assertTrue(responseBody.toLowerCase().contains("bad request"));
     }
 }
