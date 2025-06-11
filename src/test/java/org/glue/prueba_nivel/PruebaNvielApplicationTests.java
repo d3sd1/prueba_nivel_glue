@@ -1,4 +1,4 @@
-package org.glue.prueba_nviel;
+package org.glue.prueba_nivel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
