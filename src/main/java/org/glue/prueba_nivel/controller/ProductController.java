@@ -1,6 +1,7 @@
 package org.glue.prueba_nivel.controller;
 
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.glue.prueba_nivel.controller.dto.request.SortRequestDTO;
 import org.glue.prueba_nivel.controller.dto.response.ProductResponseDTO;
@@ -23,7 +24,7 @@ public class ProductController {
     private final ProductMapper mapper;
 
     @PostMapping("/sorted")
-    public List<ProductResponseDTO> getSortedProducts(@RequestBody SortRequestDTO requestDTO) {
+    public List<ProductResponseDTO> getSortedProducts(@RequestBody @Valid SortRequestDTO requestDTO) {
         return service.sortProducts(requestDTO.getSalesWeight(), requestDTO.getStockRatioWeight())
                 .stream()
                 .map(mapper::toProductResponseDto)

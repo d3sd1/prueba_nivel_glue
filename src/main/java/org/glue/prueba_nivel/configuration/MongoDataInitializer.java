@@ -1,6 +1,6 @@
 package org.glue.prueba_nivel.configuration;
+
 import org.glue.prueba_nivel.database.entity.Product;
-import org.glue.prueba_nivel.database.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
