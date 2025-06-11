@@ -7,6 +7,7 @@ import org.glue.prueba_nivel.controller.dto.request.SortRequestDTO;
 import org.glue.prueba_nivel.controller.dto.response.ProductResponseDTO;
 import org.glue.prueba_nivel.mapper.ProductMapper;
 import org.glue.prueba_nivel.service.ProductService;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/products")
 @RequiredArgsConstructor
+@Validated
 public class ProductController {
 
     private final ProductService service;
