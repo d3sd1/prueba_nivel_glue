@@ -2,8 +2,14 @@ package org.glue.prueba_nivel.controller;
 
 
 import lombok.RequiredArgsConstructor;
+import org.glue.prueba_nivel.controller.dto.request.SortRequestDTO;
+import org.glue.prueba_nivel.controller.dto.response.ProductResponseDTO;
+import org.glue.prueba_nivel.mapper.ProductMapper;
 import org.glue.prueba_nivel.service.ProductService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.stream.Collectors;
