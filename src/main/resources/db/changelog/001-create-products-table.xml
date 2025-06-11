@@ -1,0 +1,9 @@
+<changeSet id="001" author="andrei">
+    <createTable tableName="products">
+        <column name="id" type="INT">
+            <constraints primaryKey="true"/>
+        </column>
+        <column name="name" type="VARCHAR(255)"/>
+        <column name="sales_units" type="INT"/>
+    </createTable>
+</changeSet>

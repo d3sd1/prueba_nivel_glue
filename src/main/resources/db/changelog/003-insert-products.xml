@@ -1,0 +1,32 @@
+<changeSet id="003" author="andrei">
+    <insert tableName="products">
+        <column name="id" value="1"/>
+        <column name="name" value="V-NECK BASIC SHIRT"/>
+        <column name="sales_units" value="100"/>
+    </insert>
+    <insert tableName="products">
+        <column name="id" value="2"/>
+        <column name="name" value="CONTRASTING FABRIC T-SHIRT"/>
+        <column name="sales_units" value="50"/>
+    </insert>
+    <insert tableName="products">
+        <column name="id" value="3"/>
+        <column name="name" value="RAISED PRINT T-SHIRT"/>
+        <column name="sales_units" value="80"/>
+    </insert>
+    <insert tableName="products">
+        <column name="id" value="4"/>
+        <column name="name" value="PLEATED T-SHIRT"/>
+        <column name="sales_units" value="3"/>
+    </insert>
+    <insert tableName="products">
+        <column name="id" value="5"/>
+        <column name="name" value="CONTRASTING LACE T-SHIRT"/>
+        <column name="sales_units" value="650"/>
+    </insert>
+    <insert tableName="products">
+        <column name="id" value="6"/>
+        <column name="name" value="SLOGAN T-SHIRT"/>
+        <column name="sales_units" value="20"/>
+    </insert>
+</changeSet>

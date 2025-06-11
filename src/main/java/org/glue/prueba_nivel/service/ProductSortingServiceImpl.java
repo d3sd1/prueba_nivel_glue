@@ -1,6 +1,5 @@
 package org.glue.prueba_nivel.service;
 
-import org.glue.prueba_nivel.database.entity.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

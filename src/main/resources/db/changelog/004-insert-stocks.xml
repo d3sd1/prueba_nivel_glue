@@ -1,0 +1,103 @@
+<changeSet id="004" author="andrei">
+    <!-- Product 1 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="1"/>
+        <column name="size" value="S"/>
+        <column name="units" value="4"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="1"/>
+        <column name="size" value="M"/>
+        <column name="units" value="9"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="1"/>
+        <column name="size" value="L"/>
+        <column name="units" value="0"/>
+    </insert>
+
+    <!-- Product 2 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="2"/>
+        <column name="size" value="S"/>
+        <column name="units" value="35"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="2"/>
+        <column name="size" value="M"/>
+        <column name="units" value="9"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="2"/>
+        <column name="size" value="L"/>
+        <column name="units" value="9"/>
+    </insert>
+
+    <!-- Product 3 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="3"/>
+        <column name="size" value="S"/>
+        <column name="units" value="20"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="3"/>
+        <column name="size" value="M"/>
+        <column name="units" value="2"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="3"/>
+        <column name="size" value="L"/>
+        <column name="units" value="20"/>
+    </insert>
+
+    <!-- Product 4 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="4"/>
+        <column name="size" value="S"/>
+        <column name="units" value="25"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="4"/>
+        <column name="size" value="M"/>
+        <column name="units" value="30"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="4"/>
+        <column name="size" value="L"/>
+        <column name="units" value="10"/>
+    </insert>
+
+    <!-- Product 5 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="5"/>
+        <column name="size" value="S"/>
+        <column name="units" value="0"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="5"/>
+        <column name="size" value="M"/>
+        <column name="units" value="1"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="5"/>
+        <column name="size" value="L"/>
+        <column name="units" value="0"/>
+    </insert>
+
+    <!-- Product 6 -->
+    <insert tableName="stocks">
+        <column name="product_id" value="6"/>
+        <column name="size" value="S"/>
+        <column name="units" value="9"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="6"/>
+        <column name="size" value="M"/>
+        <column name="units" value="2"/>
+    </insert>
+    <insert tableName="stocks">
+        <column name="product_id" value="6"/>
+        <column name="size" value="L"/>
+        <column name="units" value="5"/>
+    </insert>
+</changeSet>
