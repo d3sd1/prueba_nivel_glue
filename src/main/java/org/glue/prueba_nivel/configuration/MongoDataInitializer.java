@@ -1,6 +1,8 @@
 package org.glue.prueba_nivel.configuration;
 
 import org.glue.prueba_nivel.database.entity.Product;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +11,7 @@ import java.util.List;
 
 @Configuration
 public class MongoDataInitializer {
+    Logger logger = LoggerFactory.getLogger(MongoDataInitializer.class);
 
     @Bean
     CommandLineRunner initData(org.glue.prueba_nivel.database.repository.ProductRepository repo) {
@@ -46,7 +49,7 @@ public class MongoDataInitializer {
                                 new Product.Stock("L", 5)
                         ))
                 ));
-                System.out.println("✅ Productos inicializados en MongoDB");
+                this.logger.info("✅ Productos inicializados en MongoDB");
             }
         };
     }
