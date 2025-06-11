@@ -1,6 +1,6 @@
 package org.glue.prueba_nivel.service.scoring;
 
-import org.glue.prueba_nivel.database.entity.ProductEntity;
+import org.glue.prueba_nivel.database.entity.Product;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ public class CompositeScoringStrategy implements ScoringStrategy {
     }
 
     @Override
-    public double score(ProductEntity product) {
+    public double score(Product product) {
         return strategies.stream().mapToDouble(s -> s.score(product)).sum();
     }
 }
